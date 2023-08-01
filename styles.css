@@ -1,1 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
+
+*{
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
+    background-image: url('Hero-2.jpg');
+    height: 100vh;
+    background-size: cover;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.black-box {
+    background-color: #000;
+    padding: 50px; /* Add some padding to the section for better presentation */
+    text-align: center;
+  }
+  
+  .black-box h3 {
+    font-size: 80px;
+    font-weight: 400;
+    color: white;
+  }
+  
+  .black-box span {
+    font-size: 96px;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 30px;
+  }
+  
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    max-width: 340px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .card-content {
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 15px;
+  }
+  
+  .card-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card-content p {
+    font-size: 16px;
+  }
+
+
+
+  .bottom-section {
+    display: flex;
+    justify-content: space-around; /* To evenly distribute the subsections horizontally */
+    background-color: #f0f0f0; /* Choose your own color for the bottom section */
+    padding: 40px;
+  }
+  
+  .contact-me,
+  .about-me {
+    padding: 20px;
+    background-color: #773c31; /* Red color for Contact Me section, choose your own color */
+    color: #fff;
+    text-align: center;
+  }
+  
+  .about-me {
+    background-color: #286e28; /* Green color for About Me section, choose your own color */
+  }
+  
+  .contact-me h2,
+  .about-me h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-me p,
+  .about-me p {
+    font-size: 16px;
+  }
+
+/* Add this media query at the end of your CSS file */
+@media only screen and (max-width: 786px) {
+    .hero {
+      min-height: 50vh; /* Changed the minimum height for the hero section */
+      padding: 20px;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .black-box h3 {
+      font-size: 24px; /* Changed the font-size for the black-box section */
+    }
+  
+    .bottom-section {
+      flex-direction: column; /* Changed the flex-direction for the bottom section */
+    }
+  
+    .contact-me,
+    .about-me {
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .contact-me h2,
+    .about-me h2 {
+      font-size: 24px; /* Changed the font-size for the headings in the contact-me and about-me sections */
+      margin-bottom: 10px;
+    }
+  
+    .contact-me p,
+    .about-me p {
+      font-size: 16px;
+    }
+  }
+  
